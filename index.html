@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Fetcher</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fetch Student Results</h1>
+        <form id="studentForm">
+            <label for="studentId">Enter Student ID:</label>
+            <input type="text" id="studentId" name="studentId" required>
+            <button type="submit">Fetch Results</button>
+        </form>
+
+        <div id="results" class="results">
+            <!-- Results will be displayed here -->
+        </div>
+
+        <div id="defenseSection" class="defense-section">
+            <h2>Add Defense Result (Optional)</h2>
+            <form id="defenseForm">
+                <label for="defenseCGPA">Enter Defense CGPA:</label>
+                <input type="number" step="0.01" id="defenseCGPA" name="defenseCGPA">
+                <button type="submit">Add Defense</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
